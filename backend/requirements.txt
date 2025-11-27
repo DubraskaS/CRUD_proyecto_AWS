@@ -1,0 +1,6 @@
+Flask
+Flask-SQLAlchemy
+Flask-CORS
+psycopg2-binary  # O mysqlclient si usas MySQL
+gunicorn         # Servidor WSGI para producción (opcional, pero útil)
+python-dotenv    # Para manejar variables .env localmente

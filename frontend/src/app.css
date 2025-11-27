@@ -1,0 +1,123 @@
+/* frontend/src/App.css */
+
+body {
+    background-color: #333d51; /* Fondo oscuro */
+    color: #f1f1f1;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #3f4a5f; /* Fondo principal del contenedor */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    padding: 0;
+}
+
+/* --- Sidebar (CRUD Formulario) --- */
+.sidebar {
+    width: 300px;
+    padding: 20px;
+    background-color: #2b3548; /* Color del panel izquierdo */
+    border-radius: 8px 0 0 8px;
+}
+
+.sidebar h2 {
+    color: #5d9cec;
+    margin-top: 0;
+}
+
+.sidebar h3 {
+    color: #5d9cec;
+    font-size: 1.1em;
+}
+
+.section {
+    margin-bottom: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #444;
+}
+
+.user-info, .total-users {
+    color: #ccc;
+    font-size: 0.9em;
+    margin: 5px 0;
+}
+
+/* --- Formulario --- */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #555;
+    background-color: #4c576d;
+    color: #f1f1f1;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+/* --- Botones --- */
+.btn {
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.btn-create {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.btn-edit {
+    background-color: #5d9cec; /* Azul */
+    color: white;
+}
+
+.btn-delete {
+    background-color: #F44336; /* Rojo */
+    color: white;
+}
+
+/* --- Contenido Principal (Tabla) --- */
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.user-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.user-table th, .user-table td {
+    border: 1px solid #4c576d;
+    padding: 10px;
+    text-align: left;
+}
+
+.user-table th {
+    background-color: #2b3548; /* Color de encabezado de tabla */
+    color: #f1f1f1;
+}
+
+.user-table tr:nth-child(even) {
+    background-color: #445063; /* Filas pares */
+}
+
+.error-message {
+    color: #F44336;
+    font-weight: bold;
+}
